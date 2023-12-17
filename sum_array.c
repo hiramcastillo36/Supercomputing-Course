@@ -26,7 +26,7 @@ int *create_array(int n) {
     int *array = (int *)malloc(n * sizeof(int));
     srand(time(NULL));
     for (int i = 0; i < n; i++) {
-        array[i] = i;
+        array[i] = rand() % 10000;
     }
     return array;
 }
